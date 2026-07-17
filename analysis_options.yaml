@@ -1,0 +1,36 @@
+# Static analysis configuration.
+#
+# Based on flutter_lints with additional production-quality rules.
+# Suppress a rule for one line/file with `// ignore: rule` /
+# `// ignore_for_file: rule` rather than disabling it project-wide.
+
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  language:
+    strict-casts: true
+    strict-inference: true
+  errors:
+    # Treat sloppy leftovers as errors so they never ship.
+    unused_import: error
+    dead_code: warning
+
+linter:
+  rules:
+    # ── Consistency ────────────────────────────────────────────────
+    prefer_single_quotes: true
+    directives_ordering: true
+    always_declare_return_types: true
+    prefer_final_locals: true
+    unnecessary_lambdas: true
+    require_trailing_commas: false # keep diffs close to package examples
+
+    # ── Correctness ────────────────────────────────────────────────
+    avoid_print: true
+    only_throw_errors: true
+    cancel_subscriptions: true
+    close_sinks: true
+    unawaited_futures: true
+    avoid_slow_async_io: true
+    test_types_in_equals: true
+    throw_in_finally: true

@@ -1,0 +1,13 @@
+{
+  "@@locale": "en",
+  "appTitle": "Liquid Glass Widgets",
+  "@appTitle": {
+    "description": "The application title"
+  },
+  "homeExploreTab": "Explore",
+  "homeWidgetsTab": "Widgets",
+  "homeDemosTab": "Demos",
+  "homeExamplesTab": "Examples",
+  "lightMode": "Light mode",
+  "darkMode": "Dark mode"
+}
