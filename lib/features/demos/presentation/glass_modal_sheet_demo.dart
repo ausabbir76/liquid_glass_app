@@ -640,7 +640,6 @@ class _ShowcaseHomeScreenState extends State<ShowcaseHomeScreen> {
       context: context,
       quality: widget.currentQuality,
       initialState: GlassSheetState.peek,
-      enablePeek: true,
       peekTopBorderRadius: 46,
       builder: (context) => const BaseScenario(
         title: 'Standard Peek',
@@ -847,7 +846,6 @@ class MapsExperienceScreen extends StatelessWidget {
     return Scaffold(
       body: GlassModalSheetScaffold(
         mode: GlassSheetMode.persistent,
-        enablePeek: true,
         initialState: GlassSheetState.peek,
         peekSize: 90,
         halfSize: 0.445,

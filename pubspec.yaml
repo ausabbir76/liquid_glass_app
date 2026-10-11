@@ -35,20 +35,20 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.8
-  liquid_glass_widgets: ^0.21.1
+  cupertino_icons: ^2.0.0
+  liquid_glass_widgets: ^1.8.1
   webview_flutter: ^4.14.0
   video_player: ^2.11.1
   flutter_svg: ^2.3.0
 
   # ── Template infrastructure ──────────────────────────────────────
-  flutter_riverpod: ^2.6.1        # State management + dependency injection
-  go_router: ^16.2.4              # Declarative routing & deep links
+  flutter_riverpod: ^3.4.3        # State management + dependency injection
+  go_router: ^18.0.2              # Declarative routing & deep links
   dio: ^5.9.0                     # HTTP client with interceptors
   shared_preferences: ^2.5.3     # Simple key-value persistence
-  flutter_secure_storage: ^9.2.4 # Encrypted storage for tokens/secrets
+  flutter_secure_storage: ^11.2.0 # Encrypted storage for tokens/secrets
   logger: ^2.6.1                  # Structured, pretty logging
-  connectivity_plus: ^6.1.5       # Network connectivity monitoring
+  connectivity_plus: ^7.3.2       # Network connectivity monitoring
   intl: ^0.20.2                   # Localization / formatting
 
 dev_dependencies:

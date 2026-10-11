@@ -12,7 +12,7 @@ final connectivityStreamProvider = StreamProvider<List<ConnectivityResult>>(
 
 /// `true` while the device has any network transport available.
 final isOnlineProvider = Provider<bool>((ref) {
-  final results = ref.watch(connectivityStreamProvider).valueOrNull;
+  final results = ref.watch(connectivityStreamProvider).asData?.value;
   if (results == null) return true; // assume online until first event
   return results.any((r) => r != ConnectivityResult.none);
 });

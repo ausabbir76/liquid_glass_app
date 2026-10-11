@@ -196,7 +196,6 @@ class _NavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GlassAppBar(
-      preferredSize: const Size.fromHeight(52),
       // Bar title fades in automatically when large title collapses
       title: Text(
         'Messages',
